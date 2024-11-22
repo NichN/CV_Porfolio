@@ -1,0 +1,109 @@
+#section-intro {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-img {
+    position: absolute;
+    top: 50px;
+    right: 10%;
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    border-radius: 50%;
+}
+
+.intronContent {
+    margin-left: 2rem;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0; 
+    transform: translateX(-50px); 
+    animation: fadeInSlide 1s forwards;
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0; 
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+
+.hello {
+    font-size: 2rem;
+    font-weight: 100;
+     color: #3a3353;
+}
+
+.Name {
+    color: #0e571e;
+    margin-left: 3%;
+}
+
+.paragreph {
+    font-size: medium;
+    font-weight: 100;
+    margin-left: 3%;
+}
+
+.btn {
+    background-color:rgb(54, 54, 189);
+    margin-left: 30%;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+ a{
+    text-decoration: none;
+}
+
+.position {
+    font-size: 2rem;
+    color: #3a3353;
+    margin-left: 10%;
+}
+
+.intronContent span {
+    display: flex;                 
+    gap: 20px;    
+    transition: background-color 0.3s ease;                  
+}
+@media only screen  and (max-width:600px) {
+    .hello{
+        font-size: 2rem;
+    }
+    .position{
+        font-size: 2rem; 
+    }
+    .paragreph{
+        display: inline;
+        font-size: 1rem;
+    }
+    .Name{
+        font-size: 1.5rem;
+    }
+    .profile-img{
+        width: 200px;
+        height: 200px;
+        flex-direction: column;
+        margin: 45%;
+        margin-right: 15px;
+    }
+    .btn{
+        margin-left: 5% ;
+    }
+};
+

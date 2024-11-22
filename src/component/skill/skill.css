@@ -1,0 +1,149 @@
+.skill-info h1{
+    background-color: #8FB16C;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 0px yellow;
+}
+.skills{
+    margin: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.List-skill ul{
+    display: flex;
+   margin-right: 50px;
+   height: 30px;
+   align-items: center;
+   width: 450px;
+   border-radius: 10px;
+   
+}
+.List-skill li{
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 50px;
+   
+}
+.List-skill li {
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.List-skill li:hover {
+    color: white; 
+}
+
+h2{
+    text-align: center;
+}
+
+.skill-item{
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+.skill-bar{
+    background-color:white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px;
+    position: relative;
+    margin-top: 3px;
+}
+.skill-fill{
+    background-color: rgb(236, 216, 101);
+    height: 100%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    transition: width 0.5s ease;
+}
+h2 {
+    font-family: Arial, sans-serif;
+    color: black;
+    margin-bottom: 20px;
+  }
+.Softskill-list li{
+    list-style-type: square;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.Softskill-list li:hover{
+    color: black;
+}
+.column1{
+    margin-top: 50px;
+    margin-left: 10px;
+    
+}
+
+.Tech_li{
+    color: black;
+}
+span{
+    font-weight: bold;
+}
+.Persional_data li{
+    padding: 10px;
+    color: black;
+}
+.Persional_data span{
+    color: rgb(39, 38, 38);
+}
+
+@media (max-width: 600px) {
+    .skill-info h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    .skills {
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .List-skill ul {
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .List-skill li {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .skill-item {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .skill-bar {
+        height: 10px;
+        margin-top: 5px;
+    }
+
+    .Softskill-list li {
+        font-size: 16px;
+    }
+
+    .column1 {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .Persional_data li {
+        padding: 5px;
+        font-size: 14px;
+        
+    }
+}
+

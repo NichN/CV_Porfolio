@@ -1,0 +1,42 @@
+.footer-container {
+    background-color: rgb(88, 84, 84); 
+    padding: 15px;
+    display: flex;
+    border-top: 1px solid #ddd; 
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Helvetica;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+span {
+    font-size: 1rem;
+    color: rgb(209, 185, 185);
+}
+.contact-item:hover span {
+    color: #007bff; 
+    cursor: pointer;
+}
+.footer-info{
+    margin-left: 100px;
+}
+.Thanks{
+    color: #ddd;
+    margin-top: 10%;
+    margin-right: 20px;
+}
+

@@ -1,0 +1,119 @@
+.education-list h1{
+    background-color: #473E66;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 0px yellow; 
+    color: #fff;
+}
+h4{
+    color: #473E66;
+}
+
+.Education-animation img{
+    width: 400px;
+    height: 300px;
+    margin: 8vw;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Education-animation {
+    transition: transform 0.10s ease, box-shadow 0.3s ease;
+    opacity: 0; 
+    animation: fadeInSlideUp 1s forwards;
+    
+}
+
+.Education-animation img:hover {
+    transform: scale(1.05);
+}
+.column-animation{
+    display: flex;
+}
+.Education-Text{
+    display: flex;
+    text-align: center;
+    
+}
+.Education-info{
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 13%;
+}
+.Education-box1 h4,.Education-box2 h4,.Education-box3 h4,.Education-box4 h4{
+    text-align: center;
+    font-weight: bold;
+    color: #473E66;
+
+}
+.Education-box1,.Education-box2,.Education-box3,.Education-box4{
+    box-shadow: 2px 2px 0px 0px #473E66;
+    width: 400px;
+    height: 100px ;
+    color: black;
+}
+.Education-box3 p , .Education-box4 p{
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .education-list h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .Education-animation img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .column-animation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Education-Text {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .Education-info {
+        margin: 5% 0;
+        width: 90%;
+    }
+
+    .Education-box1,
+    .Education-box2,
+    .Education-box3,
+    .Education-box4 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    .Education-box1 h4,
+    .Education-box2 h4,
+    .Education-box3 h4,
+    .Education-box4 h4 {
+        font-size: 1.2rem;
+    }
+
+    .Education-box3 p, 
+    .Education-box4 p {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}
+
+

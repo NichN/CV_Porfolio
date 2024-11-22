@@ -1,0 +1,163 @@
+.name-logo{
+    margin-left: 5%;
+}
+.dropdown-icon img{
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+.Navbar-fell{
+    background: #3a3353;
+    display: flex;
+    justify-content: space-between;
+}
+.Navbar{
+    background: #3a3353;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em;
+    height: 40px;
+    top:0;
+    z-index: 4;
+    color: white;
+    
+}
+.menu_navbarimg{
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+    object-fit: cover;
+}
+body{
+    background-color: #c0c1c4;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+button{
+    border-radius: 2rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10%;
+    height: 2rem;
+
+
+}
+.Menu_navbar{
+    justify-content: space-between;
+    display: flex;
+    margin-right: 20px;
+    
+}
+.Menu_navbarlist{
+    justify-content: space-between;
+    display: flex; 
+    margin: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.Menu_navbarlist:hover{
+    color: white;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #6a5f92;
+}
+.active{
+    color: #6a5f92;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #6a5f92;
+}
+
+
+.DropdownMenu {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    background-color: white; 
+    color: black; 
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
+    margin-top: 5px; 
+    z-index: 1000; 
+    width: 150px;
+    text-align: center;
+    padding: 10px; 
+}
+.DropdownMenu div {
+    background-color: #6a5f92; 
+    border-radius: 3px; 
+    padding: 5px 10px; 
+    text-align: center; 
+    flex: 1; 
+    margin: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.DropdownMenu div:hover{
+    background-color: white;
+}
+@media (max-width: 600px) {
+    .Navbar {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100vh;
+       background-color: #6a5f92 ;
+       flex-direction: column;
+       justify-content: center;
+    }
+
+    .Navbar-logo {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .Menu_navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Menu_navbarlist {
+        flex-direction: column;
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        padding: 5px 0;
+    }
+
+    .menu_navbarimg {
+        display: none;
+    }
+
+    .DropdownMenu {
+        top: 40%;
+        right: 27%;
+    }
+
+    .DropdownMenu div {
+        padding: 8px;
+    }
+
+    button {
+        padding: 1rem;
+        font-size: 0.9rem;
+        background-color: #ffff;
+        margin-bottom: 40px;
+    }
+    .dropdown-icon img{
+        display: block;
+    }
+    .dropdown-icon {
+        display: flex;                
+        justify-content: center;       
+        align-items: center;          
+        margin-right: 10px; 
+        margin-bottom: 20px;
+    }
+    
+}
+
+  
